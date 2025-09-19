@@ -77,7 +77,7 @@ def judge_layout(
 
 def generate_layout_photo(input_height, input_width):
     # 1.基础参数表
-    LAYOUT_WIDTH = 1746
+    LAYOUT_WIDTH = 1758
     LAYOUT_HEIGHT = 1180
     PHOTO_INTERVAL_H = 30  # 证件照与证件照之间的垂直距离
     PHOTO_INTERVAL_W = 30  # 证件照与证件照之间的水平距离
@@ -86,7 +86,7 @@ def generate_layout_photo(input_height, input_width):
     LIMIT_BLOCK_W = LAYOUT_WIDTH - 2 * SIDES_INTERVAL_W
     LIMIT_BLOCK_H = LAYOUT_HEIGHT - 2 * SIDES_INTERVAL_H
 
-    # 2.创建一个 1180x1746 的空白画布
+    # 2.创建一个 1180x1758 的空白画布
     white_background = np.zeros([LAYOUT_HEIGHT, LAYOUT_WIDTH, 3], np.uint8)
     white_background.fill(255)
 
@@ -120,7 +120,7 @@ def generate_layout_photo(input_height, input_width):
 def generate_layout_image(
     input_image, typography_arr, typography_rotate, width=295, height=413
 ):
-    LAYOUT_WIDTH = 1746
+    LAYOUT_WIDTH = 1758
     LAYOUT_HEIGHT = 1180
     white_background = np.zeros([LAYOUT_HEIGHT, LAYOUT_WIDTH, 3], np.uint8)
     white_background.fill(255)
